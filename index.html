@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rida Fatima | Interactive CV</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="brand">
+            <h1>Rida <span>Fatima</span></h1>
+            <p>COMPUTER SCIENCE STUDENT</p>
+        </div>
+
+        <div class="header-decoration">
+            Building Ideas <span>for a Better Tomorrow</span>
+        </div>
+    </header>
+
+
+    <!-- Main Layout -->
+    <main class="dashboard">
+
+        <!-- Left Profile Sidebar -->
+        <aside class="profile-sidebar">
+
+            <div class="profile-frame">
+                <img
+                    src="images/rida-profile.png"
+                    alt="Rida Fatima Profile Picture"
+                    class="profile-picture"
+                >
+            </div>
+
+            <h2>Rida Fatima</h2>
+
+            <p class="profile-role">Computer Science Student</p>
+
+            <div class="gold-line"></div>
+
+            <p class="quote">
+                "Consistent Learning<br>
+                for a Brighter Tomorrow"
+            </p>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="contact-details">
+
+                <div class="contact-row">
+                    <span class="contact-icon">✉</span>
+                    <a href="mailto:rida44369@gmail.com">
+                        rida44369@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-row">
+                    <span class="contact-icon">☎</span>
+                    <a href="tel:03000000000">
+                        03000000000
+                    </a>
+                </div>
+
+                <div class="contact-row">
+                    <span class="contact-icon">⌖</span>
+                    <span>Lahore, Pakistan</span>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="sidebar-button">
+                CONTACT ME <span>↗</span>
+            </a>
+
+            <div class="sidebar-footer">
+                BS COMPUTER SCIENCE · 5TH SEMESTER
+            </div>
+
+        </aside>
+
+
+        <!-- Right Content Area -->
+        <section class="main-content">
+
+            <!-- Clickable Section Blocks -->
+            <div class="section-grid">
+
+                <button class="section-tile active"
+                        data-section="about"
+                        aria-pressed="true">
+
+                    <span class="tile-number">01</span>
+                    <span class="tile-icon">♙</span>
+                    <span class="tile-title">About Me</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="education"
+                        aria-pressed="false">
+
+                    <span class="tile-number">02</span>
+                    <span class="tile-icon">♧</span>
+                    <span class="tile-title">Education</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="objective"
+                        aria-pressed="false">
+
+                    <span class="tile-number">03</span>
+                    <span class="tile-icon">◎</span>
+                    <span class="tile-title">Career Objective</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="technical"
+                        aria-pressed="false">
+
+                    <span class="tile-number">04</span>
+                    <span class="tile-icon">⌨</span>
+                    <span class="tile-title">Technical Skills</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="soft"
+                        aria-pressed="false">
+
+                    <span class="tile-number">05</span>
+                    <span class="tile-icon">♧</span>
+                    <span class="tile-title">Soft Skills</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="courses"
+                        aria-pressed="false">
+
+                    <span class="tile-number">06</span>
+                    <span class="tile-icon">▤</span>
+                    <span class="tile-title">Courses</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="languages"
+                        aria-pressed="false">
+
+                    <span class="tile-number">07</span>
+                    <span class="tile-icon">◎</span>
+                    <span class="tile-title">Languages</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+
+                <button class="section-tile"
+                        data-section="contact"
+                        aria-pressed="false">
+
+                    <span class="tile-number">08</span>
+                    <span class="tile-icon">✉</span>
+                    <span class="tile-title">Contact Me</span>
+                    <span class="tile-bottom">
+                        <span class="tile-line"></span>
+                        <span class="tile-arrow">↗</span>
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Content Panel -->
+            <div class="content-panel">
+
+                <!-- 01 About Me -->
+                <section class="content-section visible" id="about">
+
+                    <div class="content-heading">
+                        <span class="large-number">01</span>
+
+                        <div>
+                            <h2>About Me</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <div class="about-layout">
+
+                        <div class="about-text">
+
+                            <p class="description-box">
+                                I am pursuing a Bachelor of Science in
+                                Computer Science at Qarshi University,
+                                Lahore. I completed my Matriculation and
+                                FSc in the Medical group before continuing
+                                my studies in Computer Science.
+                            </p>
+
+                            <p class="description-box">
+                                I am interested in learning about emerging
+                                technologies, improving my knowledge, and
+                                developing my problem-solving skills.
+                            </p>
+
+                            <div class="personal-details">
+
+                                <div class="detail-box">
+                                    <span class="detail-icon">♙</span>
+                                    <h3>Name</h3>
+                                    <p>Rida Fatima</p>
+                                </div>
+
+                                <div class="detail-box">
+                                    <span class="detail-icon">▣</span>
+                                    <h3>Degree</h3>
+                                    <p>BS Computer Science</p>
+                                </div>
+
+                                <div class="detail-box">
+                                    <span class="detail-icon">⌖</span>
+                                    <h3>Location</h3>
+                                    <p>Lahore, Pakistan</p>
+                                </div>
+
+                            </div>
+
+                            <p class="closing-quote">
+                                "Always eager to learn, grow, and
+                                contribute through technology."
+                            </p>
+
+                        </div>
+
+                        <div class="about-visual">
+                            <div class="visual-circle">✦</div>
+
+                            <div class="visual-card">
+                                <span class="visual-symbol">&lt;/&gt;</span>
+                                <h3>Learn.</h3>
+                                <h3>Create.</h3>
+                                <h3>Grow.</h3>
+                                <p>Turning ideas into possibilities.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 02 Education -->
+                <section class="content-section" id="education">
+
+                    <div class="content-heading">
+                        <span class="large-number">02</span>
+
+                        <div>
+                            <h2>Education</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        My academic journey and educational background.
+                    </p>
+
+                    <div class="education-timeline">
+
+                        <div class="education-item">
+                            <span class="timeline-dot"></span>
+
+                            <div class="education-info">
+                                <span class="date-badge">2020–2022</span>
+                                <h3>Matriculation</h3>
+                                <p>Medical Group</p>
+                            </div>
+
+                        </div>
+
+                        <div class="education-item">
+                            <span class="timeline-dot"></span>
+
+                            <div class="education-info">
+                                <span class="date-badge">2022–2024</span>
+                                <h3>Intermediate (FSc)</h3>
+                                <p>Medical Group</p>
+                            </div>
+
+                        </div>
+
+                        <div class="education-item">
+                            <span class="timeline-dot"></span>
+
+                            <div class="education-info">
+                                <span class="date-badge">2024–Present</span>
+                                <h3>BS Computer Science</h3>
+                                <p>Qarshi University, Lahore</p>
+                                <p>Currently in 5th Semester</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 03 Career Objective -->
+                <section class="content-section" id="objective">
+
+                    <div class="content-heading">
+                        <span class="large-number">03</span>
+
+                        <div>
+                            <h2>Career Objective</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <div class="description-box objective-box">
+                        <p>
+                            To build a successful career in Computer Science
+                            by applying my knowledge, strengthening my
+                            technical skills, and gaining practical
+                            experience. I aim to keep learning and
+                            contribute to useful and innovative
+                            technology solutions.
+                        </p>
+                    </div>
+
+                    <div class="objective-highlight">
+                        <span class="highlight-icon">✦</span>
+
+                        <div>
+                            <h3>My Goal</h3>
+                            <p>
+                                Continuous learning, professional growth,
+                                and meaningful contributions to technology.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- 04 Technical Skills -->
+                <section class="content-section" id="technical">
+
+                    <div class="content-heading">
+                        <span class="large-number">04</span>
+
+                        <div>
+                            <h2>Technical Skills</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        Technical skills and tools I am learning.
+                    </p>
+
+                    <div class="skill-placeholder">
+                        <span class="placeholder-icon">&lt;/&gt;</span>
+
+                        <h3>Add Your Technical Skills</h3>
+
+                        <p>
+                            Add the programming languages, technologies,
+                            and software tools you actually know.
+                        </p>
+                    </div>
+
+                </section>
+
+
+                <!-- 05 Soft Skills -->
+                <section class="content-section" id="soft">
+
+                    <div class="content-heading">
+                        <span class="large-number">05</span>
+
+                        <div>
+                            <h2>Soft Skills</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        Personal qualities that support my learning
+                        and professional development.
+                    </p>
+
+                    <div class="soft-skills-grid">
+
+                        <div class="soft-skill">
+                            <span>01</span>
+                            <h3>Communication</h3>
+                        </div>
+
+                        <div class="soft-skill">
+                            <span>02</span>
+                            <h3>Teamwork</h3>
+                        </div>
+
+                        <div class="soft-skill">
+                            <span>03</span>
+                            <h3>Problem-Solving</h3>
+                        </div>
+
+                        <div class="soft-skill">
+                            <span>04</span>
+                            <h3>Time Management</h3>
+                        </div>
+
+                        <div class="soft-skill">
+                            <span>05</span>
+                            <h3>Creativity</h3>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 06 Courses -->
+                <section class="content-section" id="courses">
+
+                    <div class="content-heading">
+                        <span class="large-number">06</span>
+
+                        <div>
+                            <h2>Courses</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        Courses related to my learning and development.
+                    </p>
+
+                    <div class="course-grid">
+
+                        <div class="course-card">
+                            <span class="course-icon">01</span>
+                            <h3>Project Management</h3>
+                            <p>Course</p>
+                        </div>
+
+                        <div class="course-card">
+                            <span class="course-icon">02</span>
+                            <h3>AI App Development</h3>
+                            <p>Course</p>
+                        </div>
+
+                    </div>
+
+                    <p class="course-note">
+                        Add certificate details if applicable.
+                    </p>
+
+                </section>
+
+
+                <!-- 07 Languages -->
+                <section class="content-section" id="languages">
+
+                    <div class="content-heading">
+                        <span class="large-number">07</span>
+
+                        <div>
+                            <h2>Languages</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        Languages I use for communication.
+                    </p>
+
+                    <div class="language-grid">
+
+                        <div class="language-card">
+                            <span class="language-symbol">ع</span>
+                            <h3>Urdu</h3>
+                            <p>Language</p>
+                        </div>
+
+                        <div class="language-card">
+                            <span class="language-symbol">A</span>
+                            <h3>English</h3>
+                            <p>Language</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 08 Contact Me -->
+                <section class="content-section" id="contact">
+
+                    <div class="content-heading">
+                        <span class="large-number">08</span>
+
+                        <div>
+                            <h2>Contact Me</h2>
+                            <span class="heading-underline"></span>
+                        </div>
+                    </div>
+
+                    <p class="section-intro">
+                        Feel free to get in touch with me.
+                    </p>
+
+                    <div class="contact-grid">
+
+                        <a class="contact-card"
+                           href="mailto:rida44369@gmail.com">
+
+                            <span class="contact-card-icon">✉</span>
+
+                            <div>
+                                <h3>Email Address</h3>
+                                <p>rida44369@gmail.com</p>
+                            </div>
+
+                        </a>
+
+                        <a class="contact-card"
+                           href="tel:03000000000">
+
+                            <span class="contact-card-icon">☎</span>
+
+                            <div>
+                                <h3>Phone Number</h3>
+                                <p>03000000000</p>
+                            </div>
+
+                        </a>
+
+                        <div class="contact-card">
+                            <span class="contact-card-icon">⌖</span>
+
+                            <div>
+                                <h3>Location</h3>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-message">
+                        <span>✦</span>
+                        <p>Thank you for visiting my CV portfolio!</p>
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="main-footer">
+                <p>© <span id="year">2026</span> Rida Fatima</p>
+                <p>Designed with <span class="footer-heart">♥</span>
+                    and creativity.</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
